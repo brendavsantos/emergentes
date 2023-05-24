@@ -17,11 +17,14 @@
 
 (def parse-data-request (coerce/coercer data coerce/json-coercion-matcher)) 
 
-(defn completeness-identifier [author weight]
-  (if (or (contains? author :identifier.lattes)
+(defn completeness-identifier [author weight] 
+  (if (and (contains? author :identifier.lattes)
           (contains? author :identifier.orcid))
-    weight
-    0))
+    0
+    (if (or (contains? author :identifier.lattes)
+             (contains? author :identifier.orcid))
+      weight
+      0)))
 
 (defn completeness-author [author weight]
   (+ (completeness-identifier author (/ weight 5.0))
@@ -36,8 +39,7 @@
       (+ (completeness-authors authors weight (inc author-index))
          (completeness-author (nth authors author-index)
                               (/ 25.0 count-authors)))
-      0
-      )))
+      0)))
 
 (defn completeness [keyword publication weight]
   (if (contains? publication keyword)

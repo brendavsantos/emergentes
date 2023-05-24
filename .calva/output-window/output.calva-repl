@@ -10,7 +10,7 @@
 ;   - See https://calva.io/connect-sequences/
 ; 
 ; Starting Jack-in Terminal: pushd /home/brenda/Documentos/UNB/TPPE/emergentes ; lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless ; popd
-; Using host:port 127.0.0.1:44937 ...
+; Using host:port 127.0.0.1:42363 ...
 ; Hooking up nREPL sessions ...
 ; Connected session: clj
 ; TIPS:
@@ -26,6 +26,143 @@ clj꞉emergentes.core꞉>  ; Use `alt+enter` to evaluate
 clj꞉emergentes.core꞉> 
 ; Jack-in done.
 clj꞉emergentes.core꞉> 
+; Syntax error compiling at (core_test.clj:34:1).
+; Unable to resolve symbol: completeAuthor-test in this context
+clj꞉emergentes.core-test꞉> 
+; Syntax error compiling at (core_test.clj:34:1).
+; Unable to resolve symbol: completeAuthor-test in this context
+clj꞉emergentes.core-test꞉> 
+; Syntax error compiling at (core_test.clj:33:1).
+; Unable to resolve symbol: run-tests in this context
+clj꞉emergentes.core-test꞉> 
+; Evaluating file: core_test.clj
+
+Testing emergentes.core-test
+
+FAIL in (wrongIdentifier-test) (core_test.clj:28)
+Verificar a completude usando os dois identificadores ou nenhum
+expected: (= 0 (completeness-identifier {:name "Sergio", :identifier.lattes "1156310", :identifier.orcid "37023"} 5.0))
+  actual: (not (= 0 5.0))
+
+FAIL in (incompleteAuthor-test) (core_test.clj:16)
+Verificar a completude de um autor com campos faltando
+expected: (= 0.2 (completeness-author {:name "Brenda", :birthCountry "Brasil"} 5.0))
+  actual: (not (= 0.2 1.0))
+
+Ran 4 tests containing 6 assertions.
+2 failures, 0 errors.
+nil
+clj꞉emergentes.core-test꞉> 
+nil
+clj꞉emergentes.core-test꞉> 
+
+Testing emergentes.core-test
+
+FAIL in (wrongIdentifier-test) (core_test.clj:28)
+Verificar a completude usando os dois identificadores ou nenhum
+expected: (= 0 (completeness-identifier {:name "Sergio", :identifier.lattes "1156310", :identifier.orcid "37023"} 5.0))
+  actual: (not (= 0 5.0))
+
+FAIL in (incompleteAuthor-test) (core_test.clj:16)
+Verificar a completude de um autor com campos faltando
+expected: (= 0.2 (completeness-author {:name "Brenda", :birthCountry "Brasil"} 5.0))
+  actual: (not (= 0.2 1.0))
+
+Ran 4 tests containing 6 assertions.
+2 failures, 0 errors.
+{:test 4, :pass 4, :fail 2, :error 0, :type :summary}
+clj꞉emergentes.core-test꞉> 
+nil
+clj꞉emergentes.core-test꞉> 
+
+FAIL in (incompleteAuthor-test) (core_test.clj:16)
+Verificar a completude de um autor com campos faltando
+expected: (= 0.2 (completeness-author {:name "Brenda", :birthCountry "Brasil"} 5.0))
+  actual: (not (= 0.2 1.0))
+nil
+clj꞉emergentes.core-test꞉> 
+nil
+clj꞉emergentes.core-test꞉> 
+
+FAIL in (wrongIdentifier-test) (core_test.clj:28)
+Verificar a completude usando os dois identificadores ou nenhum
+expected: (= 0 (completeness-identifier {:name "Sergio", :identifier.lattes "1156310", :identifier.orcid "37023"} 5.0))
+  actual: (not (= 0 5.0))
+nil
+clj꞉emergentes.core-test꞉> 
+nil
+clj꞉emergentes.core-test꞉> 
+nil
+clj꞉emergentes.core-test꞉> 
+nil
+clj꞉emergentes.core-test꞉> 
+
+FAIL in (incompleteAuthor-test) (core_test.clj:16)
+Verificar a completude de um autor com campos faltando
+expected: (= 0.2 (completeness-author {:name "Brenda", :birthCountry "Brasil"} 5.0))
+  actual: (not (= 0.2 1.0))
+nil
+clj꞉emergentes.core-test꞉> 
+nil
+clj꞉emergentes.core-test꞉> 
+
+FAIL in (wrongIdentifier-test) (core_test.clj:28)
+Verificar a completude usando os dois identificadores ou nenhum
+expected: (= 0 (completeness-identifier {:name "Sergio", :identifier.lattes "1156310", :identifier.orcid "37023"} 5.0))
+  actual: (not (= 0 5.0))
+nil
+clj꞉emergentes.core-test꞉> 
+
+Testing emergentes.core-test
+
+FAIL in (wrongIdentifier-test) (core_test.clj:28)
+Verificar a completude usando os dois identificadores ou nenhum
+expected: (= 0 (completeness-identifier {:name "Sergio", :identifier.lattes "1156310", :identifier.orcid "37023"} 5.0))
+  actual: (not (= 0 5.0))
+
+FAIL in (incompleteAuthor-test) (core_test.clj:16)
+Verificar a completude de um autor com campos faltando
+expected: (= 0.2 (completeness-author {:name "Brenda", :birthCountry "Brasil"} 5.0))
+  actual: (not (= 0.2 1.0))
+
+Ran 4 tests containing 6 assertions.
+2 failures, 0 errors.
+{:test 4, :pass 4, :fail 2, :error 0, :type :summary}
+clj꞉emergentes.core-test꞉> 
+
+Testing emergentes.core-test
+
+FAIL in (wrongIdentifier-test) (core_test.clj:28)
+Verificar a completude usando os dois identificadores ou nenhum
+expected: (= 0 (completeness-identifier {:name "Sergio", :identifier.lattes "1156310", :identifier.orcid "37023"} 5.0))
+  actual: (not (= 0 5.0))
+
+FAIL in (incompleteAuthor-test) (core_test.clj:16)
+Verificar a completude de um autor com campos faltando
+expected: (= 0.2 (completeness-author {:name "Brenda", :birthCountry "Brasil"} 5.0))
+  actual: (not (= 0.2 1.0))
+
+Ran 4 tests containing 6 assertions.
+2 failures, 0 errors.
+{:test 4, :pass 4, :fail 2, :error 0, :type :summary}
+clj꞉emergentes.core-test꞉> 
+
+Testing emergentes.core-test
+
+FAIL in (wrongIdentifier-test) (core_test.clj:28)
+Verificar a completude usando os dois identificadores ou nenhum
+expected: (= 0 (completeness-identifier {:name "Sergio", :identifier.lattes "1156310", :identifier.orcid "37023"} 5.0))
+  actual: (not (= 0 5.0))
+
+FAIL in (incompleteAuthor-test) (core_test.clj:16)
+Verificar a completude de um autor com campos faltando
+expected: (= 0.2 (completeness-author {:name "Brenda", :birthCountry "Brasil"} 5.0))
+  actual: (not (= 0.2 1.0))
+
+Ran 4 tests containing 6 assertions.
+2 failures, 0 errors.
+{:test 4, :pass 4, :fail 2, :error 0, :type :summary}
+clj꞉emergentes.core-test꞉> 
 ; Jacking in...
 ; Connecting using "Leiningen" project type.
 ; You can make Calva auto-select this.
@@ -33,7 +170,7 @@ clj꞉emergentes.core꞉> 
 ; 
 ; Starting Jack-in Terminal: pushd /home/brenda/Documentos/UNB/TPPE/emergentes ; lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless ; popd
 ; nREPL Connection was closed
-; Using host:port 127.0.0.1:36371 ...
+; Using host:port 127.0.0.1:42955 ...
 ; Hooking up nREPL sessions ...
 ; Connected session: clj
 ; TIPS:
@@ -49,8 +186,86 @@ clj꞉emergentes.core꞉> 
 clj꞉emergentes.core꞉> 
 ; Jack-in done.
 clj꞉emergentes.core꞉> 
-(78.75 79.16666666666667 80.0 78.125 79.28571428571429 87.5 83.33333333333333 76.92307692307692 76.47058823529412 77.5)
-clj꞉emergentes.core꞉> 
+; Evaluating file: core_test.clj
+
+Testing emergentes.core-test
+
+FAIL in (wrongIdentifier-test) (core_test.clj:29)
+Verificar a completude usando os dois identificadores ou nenhum
+expected: (= 0 (completeness-identifier {:name "Sergio", :identifier.lattes "1156310", :identifier.orcid "37023"} 5.0))
+  actual: (not (= 0 5.0))
+
+FAIL in (incompleteAuthor-test) (core_test.clj:16)
+Verificar a completude de um autor com campos faltando
+expected: (= 0.2 (completeness-author {:name "Brenda", :birthCountry "Brasil"} 5.0))
+  actual: (not (= 0.2 1.0))
+
+Ran 4 tests containing 6 assertions.
+2 failures, 0 errors.
+
+FAIL in (incompleteAuthor-test) (core_test.clj:16)
+Verificar a completude de um autor com campos faltando
+expected: (= 0.2 (completeness-author {:name "Brenda", :birthCountry "Brasil"} 5.0))
+  actual: (not (= 0.2 1.0))
+
+FAIL in (wrongIdentifier-test) (core_test.clj:29)
+Verificar a completude usando os dois identificadores ou nenhum
+expected: (= 0 (completeness-identifier {:name "Sergio", :identifier.lattes "1156310", :identifier.orcid "37023"} 5.0))
+  actual: (not (= 0 5.0))
+nil
+clj꞉emergentes.core-test꞉> 
 ; Evaluating file: core.clj
-(78.75 79.16666666666667 80.0 78.125 79.28571428571429 87.5 83.33333333333333 76.92307692307692 76.47058823529412 77.5)
+(78.75 79.16666666666667 80.0 78.125 78.57142857142857 85.0 81.66666666666667 76.53846153846153 76.17647058823529 77.0)
 clj꞉emergentes.core꞉> 
+; Evaluating file: core_test.clj
+
+Testing emergentes.core-test
+
+FAIL in (incompleteAuthor-test) (core_test.clj:16)
+Verificar a completude de um autor com campos faltando
+expected: (= 0.2 (completeness-author {:name "Brenda", :birthCountry "Brasil"} 5.0))
+  actual: (not (= 0.2 1.0))
+
+Ran 4 tests containing 6 assertions.
+1 failures, 0 errors.
+
+FAIL in (incompleteAuthor-test) (core_test.clj:16)
+Verificar a completude de um autor com campos faltando
+expected: (= 0.2 (completeness-author {:name "Brenda", :birthCountry "Brasil"} 5.0))
+  actual: (not (= 0.2 1.0))
+nil
+clj꞉emergentes.core-test꞉> 
+#'emergentes.core-test/wrongIdentifier-test
+clj꞉emergentes.core-test꞉> 
+
+Testing emergentes.core-test
+
+FAIL in (incompleteAuthor-test) (core_test.clj:16)
+Verificar a completude de um autor com campos faltando
+expected: (= 0.2 (completeness-author {:name "Brenda", :birthCountry "Brasil"} 5.0))
+  actual: (not (= 0.2 1.0))
+
+Ran 4 tests containing 6 assertions.
+1 failures, 0 errors.
+{:test 4, :pass 5, :fail 1, :error 0, :type :summary}
+clj꞉emergentes.core-test꞉> 
+
+Testing emergentes.core-test
+
+FAIL in (incompleteAuthor-test) (core_test.clj:16)
+Verificar a completude de um autor com campos faltando
+expected: (= 0.2 (completeness-author {:name "Brenda", :birthCountry "Brasil"} 5.0))
+  actual: (not (= 0.2 1.0))
+
+Ran 4 tests containing 6 assertions.
+1 failures, 0 errors.
+{:test 4, :pass 5, :fail 1, :error 0, :type :summary}
+clj꞉emergentes.core-test꞉> 
+; Evaluating file: core_test.clj
+
+Testing emergentes.core-test
+
+Ran 4 tests containing 6 assertions.
+0 failures, 0 errors.
+nil
+clj꞉emergentes.core-test꞉> 
