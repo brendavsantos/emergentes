@@ -269,3 +269,75 @@ Ran 4 tests containing 6 assertions.
 0 failures, 0 errors.
 nil
 clj꞉emergentes.core-test꞉> 
+; Evaluating file: core_test.clj
+
+Testing emergentes.core-test
+
+Ran 4 tests containing 7 assertions.
+0 failures, 0 errors.
+nil
+clj꞉emergentes.core-test꞉> 
+; Evaluating file: core_test.clj
+
+Testing emergentes.core-test
+
+FAIL in (incompleteAuthor-test) (core_test.clj:15)
+Verificar a completude de um autor com campos faltando
+expected: (= 1.0 (completeness-author {:birthCountry "Brasil", :birthCity "Porto Alegre", :birthState "Goias"} 5.0))
+  actual: (not (= 1.0 3.0))
+
+FAIL in (incompleteAuthor-test) (core_test.clj:18)
+Verificar a completude de um autor com campos faltando
+expected: (= 1.0 (completeness-author {:birthCountry "Brasil", :identifier.lattes "310369"} 5.0))
+  actual: (not (= 1.0 2.0))
+
+FAIL in (incompleteAuthor-test) (core_test.clj:20)
+Verificar a completude de um autor com campos faltando
+expected: (= 1.0 (completeness-author {:birthCountry "Brasil", :identifier.orcid "130325"} 5.0))
+  actual: (not (= 1.0 2.0))
+
+FAIL in (incompleteAuthor-test) (core_test.clj:23)
+Verificar a completude de um autor com campos faltando
+expected: (= 1.0 (completeness-author {:birthCountry "Brasil", :nationality "Brasileira", :identifier.orcid "677232"} 5.0))
+  actual: (not (= 1.0 3.0))
+
+Ran 4 tests containing 11 assertions.
+4 failures, 0 errors.
+
+FAIL in (incompleteAuthor-test) (core_test.clj:15)
+Verificar a completude de um autor com campos faltando
+expected: (= 1.0 (completeness-author {:birthCountry "Brasil", :birthCity "Porto Alegre", :birthState "Goias"} 5.0))
+  actual: (not (= 1.0 3.0))
+
+FAIL in (incompleteAuthor-test) (core_test.clj:18)
+Verificar a completude de um autor com campos faltando
+expected: (= 1.0 (completeness-author {:birthCountry "Brasil", :identifier.lattes "310369"} 5.0))
+  actual: (not (= 1.0 2.0))
+
+FAIL in (incompleteAuthor-test) (core_test.clj:20)
+Verificar a completude de um autor com campos faltando
+expected: (= 1.0 (completeness-author {:birthCountry "Brasil", :identifier.orcid "130325"} 5.0))
+  actual: (not (= 1.0 2.0))
+
+FAIL in (incompleteAuthor-test) (core_test.clj:23)
+Verificar a completude de um autor com campos faltando
+expected: (= 1.0 (completeness-author {:birthCountry "Brasil", :nationality "Brasileira", :identifier.orcid "677232"} 5.0))
+  actual: (not (= 1.0 3.0))
+nil
+clj꞉emergentes.core-test꞉> 
+; Evaluating file: core_test.clj
+
+Testing emergentes.core-test
+
+Ran 4 tests containing 11 assertions.
+0 failures, 0 errors.
+nil
+clj꞉emergentes.core-test꞉> 
+; Evaluating file: core_test.clj
+
+Testing emergentes.core-test
+
+Ran 4 tests containing 12 assertions.
+0 failures, 0 errors.
+nil
+clj꞉emergentes.core-test꞉> 
