@@ -1,10 +1,11 @@
 # Trabalho Prático 1 - _Test-Driven Development_
 
-Faculdade: Universidade de Brasília   
-Campus: FGA - Faculdade do Gama   
-Disciplina: Técnicas de Programação para Plataformas Emergentes   
-Aluna: Brenda Vitória dos Santos   
+Faculdade: Universidade de Brasília      
+Campus: FGA - Faculdade do Gama      
+Disciplina: Técnicas de Programação para Plataformas Emergentes    
+Aluna: Brenda Vitória dos Santos     
 Matrícula: 18/0041444    
+Paradigma: Funcional       
 
 O programa foi desenvolvido de forma que cada publicação listada no JSON seja avaliada como tendo de 0% a 100% de completude. De acordo com o esquema, os campos estão dispostos logicamente da seguinte forma:
 
@@ -51,5 +52,40 @@ Cada autor afeta a completude geral, dos 25% destinados à completude dos autore
 > * Cálculo da completude de campos OR EXCLUSIVO; 
 > * Cálculo da completude de registros multi-campos.
 
+### Requisitos
 
+- bash
+- curl 
+- rlwrap
+- Java
+- [Clojure](https://clojure.org/guides/install_clojure)
+- [Leiningen](https://leiningen.org/)
+- VSCode, extensão [calva](https://calva.io/connect/)
+
+### Execução
+
+```
+git clone https://github.com/brendavsantos/emergentes
+
+```
+
+```
+cd emergentes
+```
+
+```
+code .
+```
+
+1. Abrir o documento que está no caminho src/emergentes/core.clj
+
+2. Abrir o documento que está no cmainho src/emergentes/core.clj
+
+3. Com CTRL+shift+p , escolher a opção "Calva: Start a project and Connect..." pra usar o jack-in
+
+4. Escolher como project type o Leiningen
+
+5. Pra carregar/recarregar/"compilar" o projeto, pode usar o atalho CTRL+alt+c. Se quiser rodar uma função específica ou só parte do código, pode clicar depois do ultimo parenteses da função e apertar alt+enter ou chamar a função no proprio console do calva (o que fica aberto na direita)...pra isso é colar a chamada da função (funcao argumento), colocar o cursor depois do ultimo parenteses dela e apertar enter.
+
+Obs: Deixei umas funções já chamadas pra ajudar rodar fácil, estão no final de cada arquivo. Pra rodar cada uma é só clicar depois do ultimo parenteses que chama a função e apertar alt+enter...Se eu tiver esquecido de algo na instalação desculpa, já tenho um costume em usar enão não lembro bem desse inicio :( 
 
