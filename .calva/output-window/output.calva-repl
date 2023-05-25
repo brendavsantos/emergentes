@@ -390,3 +390,117 @@ clj꞉emergentes.core꞉> 
 ; Evaluating file: core.clj
 (78.75 79.16666666666667 80.0 78.125 78.57142857142857 85.0 81.66666666666667 76.53846153846153 76.17647058823529 77.0)
 clj꞉emergentes.core꞉> 
+; Evaluating file: core_test.clj
+
+Testing emergentes.core-test
+
+Ran 4 tests containing 14 assertions.
+0 failures, 0 errors.
+nil
+clj꞉emergentes.core-test꞉> 
+; Evaluating file: core_test.clj
+
+Testing emergentes.core-test
+
+Ran 4 tests containing 14 assertions.
+0 failures, 0 errors.
+nil
+clj꞉emergentes.core-test꞉> 
+nil
+clj꞉emergentes.core-test꞉> 
+; Evaluating file: core_test.clj
+
+FAIL in () (core_test.clj:63)
+Verificar a completude de um autor com parâmetros: {:birthCountry "Brasil", :birthCity "Porto Alegre", :birthState "Goias"} e peso: 5.0
+expected: (= weight (completeness-author author weight))
+  actual: (not (= 5.0 3.0))
+
+FAIL in () (core_test.clj:63)
+Verificar a completude de um autor com parâmetros: {:birthCountry "Brasil", :identifier.lattes "310369"} e peso: 5.0
+expected: (= weight (completeness-author author weight))
+  actual: (not (= 5.0 2.0))
+
+FAIL in () (core_test.clj:63)
+Verificar a completude de um autor com parâmetros: {:birthCountry "Brasil", :identifier.orcid "130325"} e peso: 5.0
+expected: (= weight (completeness-author author weight))
+  actual: (not (= 5.0 2.0))
+
+FAIL in () (core_test.clj:63)
+Verificar a completude de um autor com parâmetros: {:birthCity "Gama"} e peso: 5.0
+expected: (= weight (completeness-author author weight))
+  actual: (not (= 5.0 1.0))
+
+FAIL in () (core_test.clj:63)
+Verificar a completude de um autor com parâmetros: {:birthCountry "Brasil", :nationality "Brasileira", :identifier.orcid "677232"} e peso: 5.0
+expected: (= weight (completeness-author author weight))
+  actual: (not (= 5.0 3.0))
+
+FAIL in () (core_test.clj:99)
+Verificar a completude usando os identificadores: {:name "Helena"} e peso: 5.0
+expected: (= weight (completeness-identifier author weight))
+  actual: (not (= 5.0 0))
+
+FAIL in () (core_test.clj:99)
+Verificar a completude usando os identificadores:  e peso: 5.0
+expected: (= weight (completeness-identifier author weight))
+  actual: (not (= 5.0 0))
+
+FAIL in () (core_test.clj:99)
+Verificar a completude usando os identificadores: {:identifier.lattes "1156310", :identifier.orcid "37023"} e peso: 5.0
+expected: (= weight (completeness-identifier author weight))
+  actual: (not (= 5.0 0))
+
+Testing emergentes.core-test
+
+Ran 4 tests containing 14 assertions.
+0 failures, 0 errors.
+{:test 4, :pass 14, :fail 0, :error 0, :type :summary}
+clj꞉emergentes.core-test꞉> 
+; Evaluating file: core_test.clj
+
+FAIL in () (core_test.clj:63)
+Verificar a completude de um autor com parâmetros: {:birthCountry "Brasil", :birthCity "Porto Alegre", :birthState "Goias"} e peso: 5.0
+expected: (= weight (completeness-author author weight))
+  actual: (not (= 5.0 3.0))
+
+FAIL in () (core_test.clj:63)
+Verificar a completude de um autor com parâmetros: {:birthCountry "Brasil", :identifier.lattes "310369"} e peso: 5.0
+expected: (= weight (completeness-author author weight))
+  actual: (not (= 5.0 2.0))
+
+FAIL in () (core_test.clj:63)
+Verificar a completude de um autor com parâmetros: {:birthCountry "Brasil", :identifier.orcid "130325"} e peso: 5.0
+expected: (= weight (completeness-author author weight))
+  actual: (not (= 5.0 2.0))
+
+FAIL in () (core_test.clj:63)
+Verificar a completude de um autor com parâmetros: {:birthCity "Gama"} e peso: 5.0
+expected: (= weight (completeness-author author weight))
+  actual: (not (= 5.0 1.0))
+
+FAIL in () (core_test.clj:63)
+Verificar a completude de um autor com parâmetros: {:birthCountry "Brasil", :nationality "Brasileira", :identifier.orcid "677232"} e peso: 5.0
+expected: (= weight (completeness-author author weight))
+  actual: (not (= 5.0 3.0))
+
+FAIL in () (core_test.clj:94)
+Verificar a completude usando os identificadores: {:name "Helena"} e peso: 5.0
+expected: (= weight (completeness-identifier author weight))
+  actual: (not (= 5.0 0))
+
+FAIL in () (core_test.clj:94)
+Verificar a completude usando os identificadores:  e peso: 5.0
+expected: (= weight (completeness-identifier author weight))
+  actual: (not (= 5.0 0))
+
+FAIL in () (core_test.clj:94)
+Verificar a completude usando os identificadores: {:identifier.lattes "1156310", :identifier.orcid "37023"} e peso: 5.0
+expected: (= weight (completeness-identifier author weight))
+  actual: (not (= 5.0 0))
+
+Testing emergentes.core-test
+
+Ran 4 tests containing 14 assertions.
+0 failures, 0 errors.
+{:test 4, :pass 14, :fail 0, :error 0, :type :summary}
+clj꞉emergentes.core-test꞉> 
