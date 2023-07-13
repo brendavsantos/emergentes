@@ -89,3 +89,5 @@ code .
 
 Obs: Deixei umas funções já chamadas pra ajudar rodar fácil, estão no final de cada arquivo. Pra rodar cada uma é só clicar depois do ultimo parenteses que chama a função e apertar alt+enter...Se eu tiver esquecido de algo na instalação desculpa, já tenho um costume em usar enão não lembro bem desse inicio :( 
 
+![validacao funcionando](https://media.discordapp.net/attachments/750707734910992535/1129188939606007818/validacao-funcionando.png?width=956&height=577)
+

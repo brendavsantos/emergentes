@@ -26,6 +26,16 @@
       weight
       0)))
 
+(def author{:identifier.lattes "1"})
+
+(defn has-lattes? [author])
+(defn has-orcid? [a])
+
+(cond (and (has-lattes? author) (not(has-orcid? author))) 0
+    (and (not(has-lattes? author)) (has-orcid? author)) 1
+    (and (not(has-lattes? author)) (not(has-orcid? author))) 2
+    (and (has-lattes? author) (has-orcid? author)) 3) 
+
 (defn completeness-author [author weight]
   (+ (completeness-identifier author (/ weight 5.0))
      (if (contains? author :nationality) (/ weight 5.0) 0)
