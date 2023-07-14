@@ -1,12 +1,12 @@
 # Trabalho Prático 2 (TP2)
 
-## UnB - Universidade de Brasilia 
-## FGA - Faculdade do Gama
-## TPPE - Técnicas de Programação para Plataformas Emergentes
-## Aluna: Brenda Vitória dos Santos
-## Matrícula: 180041444
+## Dados principais 
+Faculdade: Universidade de Brasilia, campus gama (FGA)    
+Disciplina: Técnicas de Programação para Plataformas Emergentes    
+Aluna: Brenda Vitória dos Santos    
+Matrícula: 180041444   
 
-### Características
+## Características
 
 * Simplicidade;
 * Elegância;
@@ -18,7 +18,7 @@
 * "Idiomático" (idioma da linguagem) e,
 * Boa documentação. 
 
-### Enunciado
+## Enunciado
 
 Para esse trabalho o grupo (ou indivíduo) deverá escolher 5 características dentre as 9
 características de um bom projeto de software apresentadas acima e, para cada
@@ -31,7 +31,7 @@ uma delas, apresentar:
 * Pelo menos uma operação de refatoração capaz de levar o projeto de código a
     ter a característica em análise. 
 
-### Escolhas
+## Escolhas
 
 [Simplicidade](caracteristicas/simplicidade.md)   
 [Modularidade](caracteristicas/modularidade.md)    
